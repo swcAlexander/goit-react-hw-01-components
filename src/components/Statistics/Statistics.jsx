@@ -3,13 +3,13 @@ import styles from 'components/Statistics/Statistics.module.css';
 
 export const Statistics = ({ title, items }) => {
   return (
-    <section className="statistics">
+    <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles.statList}>
         {' '}
-        {items.map((item) => (
-          <li className="item" key={item.id}>
+        {items.map(item => (
+          <li className={styles.item} key={item.id}>
             <span className={styles.label}>{item.label}</span>
             <span className={styles.percentage}>{item.percentage}%</span>
           </li>

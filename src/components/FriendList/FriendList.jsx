@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { FriendlistItem } from 'components/FriendList/FriendListItem';
-
+import styles from 'components/FriendList/FriendList.module.css';
 export const FriendList = ({ friends }) => {
   return (
-    <ul className="friendList">
+    <ul className={styles.friendList}>
       {friends.map(({ id, isOnline, avatar, name }) => (
         <FriendlistItem
           id={id}

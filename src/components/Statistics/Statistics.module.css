@@ -1,22 +1,30 @@
 /* ------begining-------- */
 .statistics {
+  margin: 30px auto 30px auto;
 }
 .title {
   display: flex;
-
   justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 .statList {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   display: flex;
-  gap: 30px;
   justify-content: center;
 }
 .item {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .label {
   font-size: 20px;
-  margin-right: 10px;
 }
 .percentage {
   font-size: 30px;
